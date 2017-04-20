@@ -31,9 +31,9 @@ public class Choice1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (TextControl.randQuestions > -1)
+        if (TextControl.currentQuestionIndex > -1)
         {
-            GetComponent<TextMesh>().text = firstChoice[TextControl.randQuestions];
+            GetComponent<TextMesh>().text = firstChoice[TextControl.currentQuestionIndex];
            // Debug.Log(firstChoice[TextControl.randQuestions]);
         }
     }
@@ -47,7 +47,11 @@ public class Choice1 : MonoBehaviour {
             TextControl.playerChoices.Add(TextControl.selectedAnswer);
             Debug.Log("Answer chosen");
 
-            TextControl.randQuestions = -1;
+        if (TextControl.currentQuestionIndex < TextControl.numberOfQuestions - 1)
+            TextControl.currentQuestionIndex++;
+
+        else if (TextControl.currentQuestionIndex == TextControl.numberOfQuestions - 1)
+            TextControl.currentQuestionIndex = 0;
 
     }
 }

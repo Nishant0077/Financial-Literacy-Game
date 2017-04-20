@@ -19,6 +19,6 @@ public class NextButton : MonoBehaviour {
     private void OnMouseDown()
     {
         isClicked = true;
-        TextControl.randQuestions = -1;
+        TextControl.currentQuestionIndex = -1;
     }
 }

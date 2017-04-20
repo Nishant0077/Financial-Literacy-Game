@@ -32,9 +32,9 @@ public class Choice2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TextControl.randQuestions > -1)
+        if (TextControl.currentQuestionIndex > -1)
         {
-            GetComponent<TextMesh>().text = secondChoice[TextControl.randQuestions];
+            GetComponent<TextMesh>().text = secondChoice[TextControl.currentQuestionIndex];
             //Debug.Log(secondChoice[TextControl.randQuestions]);
         }
     }
@@ -46,7 +46,13 @@ public class Choice2 : MonoBehaviour
         
             TextControl.playerChoices.Add(TextControl.selectedAnswer);
         Debug.Log("Answer chosen");
-        TextControl.randQuestions = -1;
+        
+
+        if (TextControl.currentQuestionIndex < TextControl.numberOfQuestions - 1)
+            TextControl.currentQuestionIndex++;
+
+        else if (TextControl.currentQuestionIndex == TextControl.numberOfQuestions - 1)
+            TextControl.currentQuestionIndex = 0;
 
     }
 }

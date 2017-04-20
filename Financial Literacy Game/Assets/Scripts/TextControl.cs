@@ -14,30 +14,27 @@ public class TextControl : MonoBehaviour {
     };
 
     public static string selectedAnswer;
-    public static int randQuestions = -1;
+    public static int currentQuestionIndex = 0;
     public static List<string> playerChoices = new List<string>();
     public TextMesh nextButton;
+    public static int numberOfQuestions;
     
     // NextButton nb;
 
 	// Use this for initialization
 	void Start () {
-       // NextButton.isClicked = false;
-	}
+        numberOfQuestions = questions.Count;
+
+    }
 
     // Update is called once per frame
     void Update() {
 
-        if (randQuestions == -1)
-        {
-            randQuestions = Random.Range(0, questions.Count);
-            //nb.isClicked = false;
-            
-        }
+       
+            GetComponent<TextMesh>().text = questions[currentQuestionIndex];
 
-        if (randQuestions > -1)
-        {
-            GetComponent<TextMesh>().text = questions[randQuestions];
+           
+
            // nb.isClicked = false;
             Debug.Log("Player has attempted these many questions: " + playerChoices.Count);
         }
@@ -45,4 +42,4 @@ public class TextControl : MonoBehaviour {
     }
 
    
-}
+
