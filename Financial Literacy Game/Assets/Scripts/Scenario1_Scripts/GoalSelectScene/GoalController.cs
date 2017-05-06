@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DropdownController : MonoBehaviour {
+public class GoalController : MonoBehaviour {
 
     List<string> names = new List<string>() { "Choose a Goal", "Car", "College", "House" };
     public Dropdown dropdown;
@@ -15,7 +15,7 @@ public class DropdownController : MonoBehaviour {
     {
         selectedName = names[index];
         PlayerPrefs.SetString("Goal", selectedName);
-        goalAmountText.text = "The goal amount text is:  " + GetGoalAmount();
+        goalAmountText.text = "The goal amount is:  " + GetGoalAmount();
         Debug.Log("The " + "goal " + " is " + PlayerPrefs.GetString("Goal"));
     }
 

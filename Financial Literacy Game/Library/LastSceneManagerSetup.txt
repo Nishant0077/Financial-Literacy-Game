@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/scenario1_Goal.unity
+- path: Assets/Scenes/Scenario1_Scenes/scenario1_Goal.unity
   isLoaded: 1
   isActive: 1

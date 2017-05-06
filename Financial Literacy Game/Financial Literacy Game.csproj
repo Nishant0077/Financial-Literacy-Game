@@ -88,9 +88,15 @@
     <Compile Include="Assets\Scripts\Choice2.cs" />
     <Compile Include="Assets\Scripts\Choice3.cs" />
     <Compile Include="Assets\Scripts\Choice4.cs" />
-    <Compile Include="Assets\Scripts\DropdownController.cs" />
     <Compile Include="Assets\Scripts\HighlightText.cs" />
     <Compile Include="Assets\Scripts\NextButton.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\CreditScoreScene\CreditScoreController.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\GoalSelectScene\GoalController.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\HourlyWageScene\HourlyRateController.cs" />
+    <Compile Include="Assets\Scripts\Scenario1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
     <Compile Include="Assets\Scripts\TextControl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
