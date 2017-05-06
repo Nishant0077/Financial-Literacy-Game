@@ -7,6 +7,6 @@ public class GoalSceneNextButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene("scenario1_HourlyRate");
+        SceneManager.LoadScene("Day1_HourlyRate");
     }
 }

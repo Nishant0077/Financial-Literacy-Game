@@ -7,6 +7,6 @@ public class HourlyWageNextButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene("scenario1_CreditScore");
+        SceneManager.LoadScene("Day1_CreditScore");
     }
 }

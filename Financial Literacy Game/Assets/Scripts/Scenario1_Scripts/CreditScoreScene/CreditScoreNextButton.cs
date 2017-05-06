@@ -7,6 +7,6 @@ public class CreditScoreNextButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene("scenario1_BudgetingMethod");
+        SceneManager.LoadScene("Day1_BudgetingMethod");
     }
 }
