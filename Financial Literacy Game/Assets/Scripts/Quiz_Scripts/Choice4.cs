@@ -7,11 +7,7 @@ public class Choice4 : MonoBehaviour
 
     List<string> fourthChoice = new List<string>
         {
-            "Mercury",
-            "Grey",
-            "10",
-            "Tennis",
-            "None"
+           "3", "3","3","3","3","3","3","3","3","3","3"
 
         };
 

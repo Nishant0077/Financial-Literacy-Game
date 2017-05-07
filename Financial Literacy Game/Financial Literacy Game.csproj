@@ -100,9 +100,12 @@
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice4.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice5.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice6.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\HighlightText.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\NextButton.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\TextControl.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\TextMeshResize.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

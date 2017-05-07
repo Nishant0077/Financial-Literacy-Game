@@ -6,12 +6,19 @@ public class Choice1 : MonoBehaviour {
 
     List<string> firstChoice = new List<string>
         {
-            "Earth",
-            "Red",
-            "6",
-            "Football",
-            "Egg"
-           
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",     
+
+
         };
 
      TextControl tc;

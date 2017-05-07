@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Choice2 : MonoBehaviour
+public class Choice5 : MonoBehaviour
 {
 
-    List<string> secondChoice = new List<string>
+    List<string> fifthChoice = new List<string>
         {
-            "1", "1","1","1","1", "1", "1","1","1","1", "1"            
-            
+           "4", "4","4","4","4","4","4","4","4","4","4"
+
         };
 
-     TextControl tc;
+    TextControl tc;
+    NextButton nb;
     AudioSource audioSource;
     AudioClip audioClip;
 
     // Use this for initialization
     void Start()
     {
-        //nb = GetComponent<NextButton>();
         tc = GetComponent<TextControl>();
-        GetComponent<TextMesh>().text = secondChoice[0];
+        nb = GetComponent<NextButton>();
+        GetComponent<TextMesh>().text = fifthChoice[0];
         audioSource = GameObject.FindGameObjectsWithTag("ClickSound")[0].GetComponent<AudioSource>();
         audioClip = audioSource.clip;
     }
@@ -30,8 +31,8 @@ public class Choice2 : MonoBehaviour
     {
         if (TextControl.currentQuestionIndex > -1)
         {
-            GetComponent<TextMesh>().text = secondChoice[TextControl.currentQuestionIndex];
-            //Debug.Log(secondChoice[TextControl.randQuestions]);
+            GetComponent<TextMesh>().text = fifthChoice[TextControl.currentQuestionIndex];
+            //  Debug.Log(firstChoice[TextControl.randQuestions]);
         }
     }
 
@@ -39,10 +40,10 @@ public class Choice2 : MonoBehaviour
     {
         audioSource.PlayOneShot(audioClip);
         TextControl.selectedAnswer = gameObject.name;
-        
-            TextControl.playerChoices.Add(TextControl.selectedAnswer);
+
+        TextControl.playerChoices.Add(TextControl.selectedAnswer);
         Debug.Log("Answer chosen");
-        
+
 
         if (TextControl.currentQuestionIndex < TextControl.numberOfQuestions - 1)
             TextControl.currentQuestionIndex++;

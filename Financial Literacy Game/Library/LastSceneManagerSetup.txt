@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Day1_Scenes/Day1_Goal.unity
+- path: Assets/Scenes/Quiz_Scenes/scene0.unity
   isLoaded: 1
   isActive: 1

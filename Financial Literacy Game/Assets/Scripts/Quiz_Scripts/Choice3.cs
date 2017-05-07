@@ -7,12 +7,8 @@ public class Choice3 : MonoBehaviour
 
     List<string> thirdChoice = new List<string>
         {
-            "Saturn",
-            "Pink",
-            "8",
-            "Hockey",
-            "Both"
-            
+            "2", "2","2","2","2","2","2","2","2","2","2"
+
         };
 
      TextControl tc;
