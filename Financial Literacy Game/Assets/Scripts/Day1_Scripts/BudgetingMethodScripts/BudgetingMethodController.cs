@@ -9,7 +9,9 @@ public class BudgetingMethodController : MonoBehaviour
     public int generatedNumber;
     public Text generatedNumberText;
     public Text budgetingMethodText;
-    public int budgetingMethod;
+    public int savingsPercentage;
+    float temp;
+    float savings;
 
 
 
@@ -24,28 +26,42 @@ public class BudgetingMethodController : MonoBehaviour
         switch (generatedNumber)
         {
             case 1:
-                budgetingMethod = 1;
+                savingsPercentage = 10;
                 break;
 
             case 2:
-                budgetingMethod = 2;
+                savingsPercentage = 20;
                 break;
 
             case 3:
-                budgetingMethod = 3;
+                savingsPercentage = 30;
                 break;
 
             default:
-                budgetingMethod = 3;
+                savingsPercentage = 15;
                 break;
 
                 
         }
 
+        
+        DisplayBudgetingMethodText();
+        temp = (PlayerPrefs.GetInt("BudgetingMethod"));
+        savings = ((float) (temp / 100)) * (PlayerPrefs.GetFloat("Income") * 4);
+        Debug.Log("Savings percent is : " + PlayerPrefs.GetInt("BudgetingMethod"));
+        Debug.Log("The weekly income is " + (PlayerPrefs.GetFloat("Income")));
+        Debug.Log("The monthly savings is " + savings);
         // store the budgeting method in playerprefs
-        PlayerPrefs.SetInt("BudgetingMethod", budgetingMethod);
+        PlayerPrefs.SetInt("BudgetingMethod", savingsPercentage);
+        PlayerPrefs.SetFloat("Savings", savings);
+        
 
-        switch (budgetingMethod)
+
+    }
+
+    public void DisplayBudgetingMethodText()
+    {
+        switch (savingsPercentage)
         {
             case 1:
                 budgetingMethodText.text = "The budgeting method is 65/5/30";
@@ -63,7 +79,7 @@ public class BudgetingMethodController : MonoBehaviour
                 budgetingMethodText.text = "The budgeting method is 58/12/30";
                 break;
 
-        }   
-
+        }
     }
+        
 }

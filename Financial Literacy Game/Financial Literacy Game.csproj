@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CreditCardNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreController.cs" />
@@ -93,6 +94,8 @@
     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyRateController.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardController.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Day2_Scenario1_Button.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scripts\ScamController.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />
