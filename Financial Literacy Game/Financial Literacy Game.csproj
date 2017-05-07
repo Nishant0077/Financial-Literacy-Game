@@ -84,20 +84,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Choice1.cs" />
-    <Compile Include="Assets\Scripts\Choice2.cs" />
-    <Compile Include="Assets\Scripts\Choice3.cs" />
-    <Compile Include="Assets\Scripts\Choice4.cs" />
-    <Compile Include="Assets\Scripts\HighlightText.cs" />
-    <Compile Include="Assets\Scripts\NextButton.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\CreditScoreScene\CreditScoreController.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\GoalSelectScene\GoalController.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\HourlyWageScene\HourlyRateController.cs" />
-    <Compile Include="Assets\Scripts\Scenario1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
-    <Compile Include="Assets\Scripts\TextControl.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodNextButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreController.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalController.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyRateController.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardController.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\Choice4.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\HighlightText.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\NextButton.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\TextControl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

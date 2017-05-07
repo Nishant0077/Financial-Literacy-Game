@@ -9,8 +9,10 @@ public class HourlyRateController : MonoBehaviour {
     public Text generatedNumberText;
     public Text hourlyWageText;
     public Text taxRateText;
+    public Text incomeText;
     private float taxRate = 0;
     private int hourlyWage = 0;
+    float income = 0;
 
     // determine hourly wage and tax rate 
     public void OnMouseDown()
@@ -38,15 +40,19 @@ public class HourlyRateController : MonoBehaviour {
                 break;
 
             default:
-                hourlyWage = 15;
-                taxRate = 10;
+                hourlyWage = 9;
+                taxRate = 20.17f;
                 break;
 
         }
 
+        
+        income = (40 * hourlyWage) - ((taxRate / 100) * (40 * hourlyWage));
+        taxRateText.text = "The tax rate is " + taxRate + "%";
+        hourlyWageText.text = "The hourly wage is " + hourlyWage;
+        incomeText.text = "The weekly income after tax is : " + income;
         PlayerPrefs.SetFloat("TaxRate", taxRate);       // store the taxrate and hourly wage in playerprefs
         PlayerPrefs.SetInt("HourlyWage", hourlyWage);
-        taxRateText.text = "The tax rate is " + taxRate;
-        hourlyWageText.text = "The hourly wage is " + hourlyWage;
+        PlayerPrefs.SetFloat("Income", income);
     }
 }

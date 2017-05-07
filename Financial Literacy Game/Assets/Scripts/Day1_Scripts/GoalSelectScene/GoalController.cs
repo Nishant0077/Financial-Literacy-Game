@@ -9,36 +9,45 @@ public class GoalController : MonoBehaviour {
     public Dropdown dropdown;
     public string selectedName;
     public Text goalAmountText;
+    public int goalAmount;
     
 
     public void Dropdown_IndexChanged(int index)
     {
         selectedName = names[index];
-        PlayerPrefs.SetString("Goal", selectedName);
-        goalAmountText.text = "The goal amount is:  " + GetGoalAmount();
-        Debug.Log("The " + "goal " + " is " + PlayerPrefs.GetString("Goal"));
-    }
+        // PlayerPrefs.SetString("Goal", selectedName);
 
-    public int GetGoalAmount()
-    {
         if (selectedName.Equals("Car"))
         {
-            return 2000;
+
+            goalAmount = 2000;
         }
 
         if (selectedName.Equals("College"))
         {
-            return 16000;
+            goalAmount = 16000;
         }
 
         if (selectedName.Equals("House"))
         {
-            return 30000;
+            goalAmount = 30000;
         }
 
-        else return 0;
+        if ((!names.Contains(selectedName)))
+        {
+            goalAmount = 0;
+        }
 
+        PlayerPrefs.SetInt("GoalAmount", goalAmount);
+
+        goalAmountText.text = "The goal amount is:  " + goalAmount;
+       // Debug.Log("The " + "goal " + " is " + PlayerPrefs.GetString("Goal"));
     }
+
+  
+        
+
+    
 	
 	void Start () {
 
