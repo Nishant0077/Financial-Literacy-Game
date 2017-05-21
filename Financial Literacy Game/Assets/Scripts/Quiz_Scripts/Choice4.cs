@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class Choice4 : MonoBehaviour
 {
@@ -43,7 +44,16 @@ public class Choice4 : MonoBehaviour
 
         TextControl.playerChoices.Add(TextControl.selectedAnswer);
         Debug.Log("Answer chosen");
-        
+
+        Debug.Log("The current question index is: " + TextControl.currentQuestionIndex);
+        Debug.Log("The player's choice is " + TextControl.selectedAnswer);
+
+        Analytics.CustomEvent("Quiz Data", new Dictionary<string, object>
+      {
+        { "Index of the current Question: " + TextControl.currentQuestionIndex.ToString(),
+                    "Player's Choice: " + TextControl.selectedAnswer}
+
+      });
 
         if (TextControl.currentQuestionIndex < TextControl.numberOfQuestions - 1)
             TextControl.currentQuestionIndex++;

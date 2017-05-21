@@ -41,10 +41,11 @@ public class TextControl : MonoBehaviour {
        
             GetComponent<TextMesh>().text = questions[currentQuestionIndex];
 
-           
 
-           // nb.isClicked = false;
-            Debug.Log("Player has attempted these many questions: " + playerChoices.Count);
+
+        // nb.isClicked = false;
+       
+        
         }
     
     }
