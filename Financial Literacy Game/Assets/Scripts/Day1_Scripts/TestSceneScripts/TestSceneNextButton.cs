@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TestSceneNextButton : MonoBehaviour {
 
-    private string sceneToLoad;
+    private string sceneToLoad = "Day2_Scenario1";
 
     public void OnMouseDown()
     {

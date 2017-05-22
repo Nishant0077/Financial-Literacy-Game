@@ -16,7 +16,7 @@ public class CreditCardController : MonoBehaviour
 
     public void Start()
     {
-        DisplayBudgetingMethodText();
+        //DisplayBudgetingMethodText();
         goalAmountText.text = "The goal amount is " + PlayerPrefs.GetInt("GoalAmount");
         savingsText.text = "The savings is " + PlayerPrefs.GetFloat("Savings");
         
