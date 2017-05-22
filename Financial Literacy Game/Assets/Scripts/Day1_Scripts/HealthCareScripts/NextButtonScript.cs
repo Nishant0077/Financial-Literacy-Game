@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestSceneNextButton : MonoBehaviour {
+public class NextButtonScript : MonoBehaviour {
 
-    private string sceneToLoad = "Day1_HealthCarePlan";
+    string sceneToLoad = "Day2_Scenario1";
 
     public void OnMouseDown()
     {

@@ -90,6 +90,12 @@
     <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalController.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\BasicPlanButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\HealthCareController.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NextButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NoPlanButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\PremiumPlanButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\StandardPlanButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyRateController.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\PlayerAttributesSetter.cs" />
