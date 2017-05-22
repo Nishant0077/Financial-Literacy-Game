@@ -46,7 +46,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
         savingsFactor = 0.25f;
         //currentSavingsAmount = monthlySavingsAmount * 26;
         weeklyIncome =  ((40 * hourlyWage) - ((taxRate / 100) * (40 * hourlyWage)));
-        currentSavingsAmount = weeklyIncome * savingsFactor * 26;
+        currentSavingsAmount = weeklyIncome * savingsFactor * 26; // this is for 6 months
 
 
         goalAmountText.text = "Goal Amount: " + PlayerPrefs.GetInt("GoalAmount");
@@ -56,7 +56,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
         creditScoreText.text = "Credit Score: " + creditScore;
         taxRateText.text = "Tax Rate: " + taxRate;
         hourlyWageText.text = "Hourly Wage: " + hourlyWage;
-        currentSavingsText.text = "Current Savings over 6 Months: " + currentSavingsAmount;
+        currentSavingsText.text = "Current Savings projected over 6 Months: " + currentSavingsAmount;
 
         PlayerPrefs.SetInt("CreditScore", creditScore);
         PlayerPrefs.SetFloat("TaxRate", taxRate);

@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardController.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardNextButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Day2_Scenario1_Button.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scripts\ScamButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scripts\ScamController.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />

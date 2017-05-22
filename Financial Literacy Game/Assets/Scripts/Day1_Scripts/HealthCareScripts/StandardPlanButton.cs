@@ -22,5 +22,7 @@ public class StandardPlanButton : MonoBehaviour
         hc.projectedSavingsAmount = savingsWithNoPlan - (monthlyDeduction * 6);
         hc.projectedSavingsText.text = "Your projected savings over 6 months: " + hc.projectedSavingsAmount;
         PlayerPrefs.SetFloat("CurrentSavingsAmount", hc.projectedSavingsAmount);
+        hc.currentPlan = HealthCareController.healthCarePlanType.Standard;
+        PlayerPrefs.SetString("CurrentHealthPlan", hc.currentPlan.ToString());
     }
 }

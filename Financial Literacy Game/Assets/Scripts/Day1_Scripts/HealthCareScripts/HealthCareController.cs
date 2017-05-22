@@ -8,6 +8,9 @@ public class HealthCareController : MonoBehaviour {
     public float monthlyDeduction = 0;
     public float projectedSavingsAmount;
     public Text projectedSavingsText;
+    public enum healthCarePlanType {No, Basic, Standard, Premium};
+
+    public healthCarePlanType currentPlan;
 
 	
 }

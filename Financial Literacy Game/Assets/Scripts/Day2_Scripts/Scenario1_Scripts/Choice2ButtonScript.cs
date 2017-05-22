@@ -15,14 +15,14 @@ public class Choice2ButtonScript : MonoBehaviour {
 
     private void Start()
     {
-        currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
-        currentSavingsText.text = "Current Savings of 6 months: " + currentSavingsAmount;
+        currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");  
+        //currentSavingsText.text = "Current project sain: " + currentSavingsAmount;
        
     }
 
     public void OnMouseDown()
     {
-        newSavingsAmount = currentSavingsAmount - priceOfPurchasedItem;
-        newSavingsText.text = "Your new savings: " + newSavingsAmount;
+        newSavingsAmount = (currentSavingsAmount - priceOfPurchasedItem);
+        newSavingsText.text = "Your new projected savings for next 6 months: " + newSavingsAmount;
     }
 }

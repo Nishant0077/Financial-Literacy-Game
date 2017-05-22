@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Day2_Scenario1_Button : MonoBehaviour
 {
+    string sceneToLoad = "Day2_Scam";
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene("Day2_Scenario2");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

@@ -20,17 +20,17 @@ public class GoalController : MonoBehaviour {
         if (selectedName.Equals("Car"))
         {
 
-            goalAmount = 2000;
+            goalAmount = 20000;
         }
 
         if (selectedName.Equals("College"))
         {
-            goalAmount = 16000;
+            goalAmount = 160000;
         }
 
         if (selectedName.Equals("House"))
         {
-            goalAmount = 30000;
+            goalAmount = 300000;
         }
 
         if ((!names.Contains(selectedName)))

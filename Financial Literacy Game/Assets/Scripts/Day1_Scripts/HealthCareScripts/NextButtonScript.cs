@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextButtonScript : MonoBehaviour {
 
-    string sceneToLoad = "Day2_Scenario1";
+    string sceneToLoad = "Day2_CreditCardPurchase";
 
     public void OnMouseDown()
     {
