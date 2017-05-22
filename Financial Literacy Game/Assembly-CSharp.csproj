@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{0A55CE08-2EF2-9F59-E72C-1D1705CC7F59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreController.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalController.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\BasicPlanButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\HealthCareController.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NextButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NoPlanButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\PremiumPlanButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\StandardPlanButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyRateController.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\PlayerAttributesSetter.cs" />
+     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\TestSceneNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Choice1ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Choice2ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardController.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\CreditCardNextButton.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Day2_Scenario1_Button.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scripts\ScamButton.cs" />
+     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scripts\ScamController.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice4.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice5.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice6.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\HighlightText.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\NextButton.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ButtonControl.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\QuizController.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\TextChanger.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\TextControl.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\TextMeshResize.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
