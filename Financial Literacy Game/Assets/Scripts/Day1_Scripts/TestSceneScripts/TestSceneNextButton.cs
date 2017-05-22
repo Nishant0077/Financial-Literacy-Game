@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoalSceneNextButton : MonoBehaviour {
+public class TestSceneNextButton : MonoBehaviour {
 
-    string scenetoLoad = "Day1_TestScene";
+    private string sceneToLoad;
 
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(scenetoLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
