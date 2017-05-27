@@ -23,6 +23,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
     public float fixedExpensesFactor;
     //-------------------------------
     public float weeklyIncome;
+    public float annualIncome;
     public float currentSavingsAmount;
 
 
@@ -41,11 +42,14 @@ public class PlayerAttributesSetter : MonoBehaviour {
         
         
         creditScore = 600;
-        taxRate = 15f;
+        taxRate = 15f;   // TODO
         hourlyWage = 20;
         savingsFactor = 0.25f;
+        weeklyIncome = 40 * hourlyWage;
+        annualIncome = weeklyIncome * 52;
+        
         //currentSavingsAmount = monthlySavingsAmount * 26;
-        weeklyIncome =  ((40 * hourlyWage) - ((taxRate / 100) * (40 * hourlyWage)));
+        //weeklyIncome =  ((40 * hourlyWage) - ((taxRate / 100) * (40 * hourlyWage)));
         currentSavingsAmount = weeklyIncome * savingsFactor * 26; // this is for 6 months
 
 

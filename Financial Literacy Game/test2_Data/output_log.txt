@@ -1,0 +1,61 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1be0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8178
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.076 seconds
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\User\Documents\financial-literacy-game\Financial Literacy Game\test2_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 120Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.068822 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.140735 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 317.
+Total: 0.216506 ms (FindLiveObjects: 0.017630 ms CreateObjectMapping: 0.014457 ms MarkObjects: 0.163261 ms  DeleteObjects: 0.020804 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.303955 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 337.
+Total: 0.222853 ms (FindLiveObjects: 0.018336 ms CreateObjectMapping: 0.014457 ms MarkObjects: 0.185476 ms  DeleteObjects: 0.004231 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.406214 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 314.
+Total: 0.206280 ms (FindLiveObjects: 0.019746 ms CreateObjectMapping: 0.013752 ms MarkObjects: 0.168903 ms  DeleteObjects: 0.003526 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.361079 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 308.
+Total: 0.197112 ms (FindLiveObjects: 0.021509 ms CreateObjectMapping: 0.015515 ms MarkObjects: 0.155503 ms  DeleteObjects: 0.003878 ms)
+
+Scene 'Day1_BudgetingMethod' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 137)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 5474 -> priority: 1 
+  Thread -> id: 3168 -> priority: 1 
+  Thread -> id: 1830 -> priority: 1 
+  Thread -> id: 28bc -> priority: 1 
