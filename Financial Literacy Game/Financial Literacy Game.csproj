@@ -84,10 +84,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodController.cs" />
-    <Compile Include="Assets\Scripts\Day1_Scripts\BudgetingMethodScripts\BudgetingMethodNextButton.cs" />
-    <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreController.cs" />
-    <Compile Include="Assets\Scripts\Day1_Scripts\CreditScoreScene\CreditScoreNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalController.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\GoalSelectScene\GoalSceneNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\BasicPlanButton.cs" />
@@ -96,8 +92,6 @@
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NoPlanButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\PremiumPlanButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\StandardPlanButton.cs" />
-    <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyRateController.cs" />
-    <Compile Include="Assets\Scripts\Day1_Scripts\HourlyWageScene\HourlyWageNextButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\PlayerAttributesSetter.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\TestSceneNextButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Scripts\Choice1ButtonScript.cs" />
