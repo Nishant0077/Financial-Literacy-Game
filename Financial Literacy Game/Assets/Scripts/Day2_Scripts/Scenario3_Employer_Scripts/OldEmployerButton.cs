@@ -14,7 +14,7 @@ public class OldEmployerButton : MonoBehaviour {
     private void Start()
     {
         hourlyWage = PlayerPrefs.GetInt("HourlyWage");
-        savingsAmount = PlayerPrefs.GetFloat("SavingsAmount");
+        savingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
         savingsFactor = PlayerPrefs.GetFloat("SavingsFactor");        
     }
 
@@ -28,7 +28,7 @@ public class OldEmployerButton : MonoBehaviour {
         savingsAmount = savingsAmount + bonus;
         Debug.Log("New savings amount is" + savingsAmount);
         PlayerPrefs.SetInt("HourlyWage", hourlyWage);
-        PlayerPrefs.SetFloat("SavingsAmount", savingsAmount);
+        PlayerPrefs.SetFloat("CurrentSavingsAmount", savingsAmount);
         
 
 

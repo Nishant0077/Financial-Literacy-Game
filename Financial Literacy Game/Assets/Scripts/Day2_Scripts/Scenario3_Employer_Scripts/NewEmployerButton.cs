@@ -14,7 +14,7 @@ public class NewEmployerButton : MonoBehaviour
     private void Start()
     {
         hourlyWage = PlayerPrefs.GetInt("HourlyWage");
-        savingsAmount = PlayerPrefs.GetFloat("SavingsAmount");
+        savingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
         savingsFactor = PlayerPrefs.GetFloat("SavingsFactor");
     }
 
@@ -25,7 +25,7 @@ public class NewEmployerButton : MonoBehaviour
         hourlyWage = hourlyWage + raiseInWage;
         // savingsAmount = savingsAmount + ((40 * hourlyWage) * savingsFactor * 26);        // put it in next scene       
         PlayerPrefs.SetInt("HourlyWage", hourlyWage);
-        PlayerPrefs.SetFloat("SavingsAmount", savingsAmount);
+        PlayerPrefs.SetFloat("CurrentSavingsAmount", savingsAmount);
 
 
 

@@ -105,6 +105,10 @@
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario3_Employer_Scripts\MouseHoverTextScript.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario3_Employer_Scripts\NewEmployerButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario3_Employer_Scripts\OldEmployerButton.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\AssociatesButton.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GEDProgramButton.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GameControllerSchool.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\NoSchoolButton.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />
