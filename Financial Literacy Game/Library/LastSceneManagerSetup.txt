@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Day2_Scenes/Day2_Employer.unity
+- path: Assets/Scenes/Day2_Scenes/Day2_School.unity
   isLoaded: 1
   isActive: 1

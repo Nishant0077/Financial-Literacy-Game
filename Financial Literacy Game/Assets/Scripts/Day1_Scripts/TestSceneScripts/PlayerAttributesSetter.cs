@@ -16,6 +16,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
     public int creditScore;
     public int goalAmount;
     public int hourlyWage;
+    public int hoursWorkedInWeek = 40;
     public float taxRate;
     // budgeting method------------------
     public float savingsFactor;
@@ -45,7 +46,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
         taxRate = 15f;   // TODO
         hourlyWage = 20;
         savingsFactor = 0.25f;
-        weeklyIncome = 40 * hourlyWage;
+        weeklyIncome = hoursWorkedInWeek * hourlyWage;
         annualIncome = weeklyIncome * 52;
         
         //currentSavingsAmount = monthlySavingsAmount * 26;
@@ -66,6 +67,8 @@ public class PlayerAttributesSetter : MonoBehaviour {
         PlayerPrefs.SetFloat("TaxRate", taxRate);
         PlayerPrefs.SetInt("HourlyWage", hourlyWage);
         PlayerPrefs.SetFloat("CurrentSavingsAmount", currentSavingsAmount);
+        PlayerPrefs.SetFloat("SavingsFactor", savingsFactor);
+        PlayerPrefs.SetFloat("WeeklyIncome", weeklyIncome);
 
 
 
