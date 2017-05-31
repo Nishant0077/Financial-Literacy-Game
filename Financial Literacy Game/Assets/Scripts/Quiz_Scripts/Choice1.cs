@@ -26,6 +26,7 @@ public class Choice1 : MonoBehaviour {
      NextButton nb;
     AudioSource audioSource;
     AudioClip audioClip;
+    public string idOfPlayer;
 
 
     // Use this for initialization
@@ -35,10 +36,16 @@ public class Choice1 : MonoBehaviour {
         GetComponent<TextMesh>().text = firstChoice[0];
         audioSource = GameObject.FindGameObjectsWithTag("ClickSound")[0].GetComponent<AudioSource>();
         audioClip = audioSource.clip;
+        
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        idOfPlayer = PlayerPrefs.GetString("PlayerID");
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (TextControl.currentQuestionIndex > -1)
         {
             GetComponent<TextMesh>().text = firstChoice[TextControl.currentQuestionIndex];
@@ -58,7 +65,7 @@ public class Choice1 : MonoBehaviour {
         Debug.Log("The current question index is: " + TextControl.currentQuestionIndex);
         Debug.Log("The player's choice is " + TextControl.selectedAnswer);
 
-            Analytics.CustomEvent("Quiz Data", new Dictionary<string, object>
+            Analytics.CustomEvent(idOfPlayer, new Dictionary<string, object>
       {
         { "Index of the current Question: " + TextControl.currentQuestionIndex.ToString(),
                     "Player's Choice: " + TextControl.selectedAnswer}

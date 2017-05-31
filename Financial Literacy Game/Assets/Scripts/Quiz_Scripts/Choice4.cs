@@ -16,6 +16,7 @@ public class Choice4 : MonoBehaviour
     NextButton nb;
     AudioSource audioSource;
     AudioClip audioClip;
+    public string idOfPlayer;
 
     // Use this for initialization
     void Start()
@@ -25,6 +26,11 @@ public class Choice4 : MonoBehaviour
         GetComponent<TextMesh>().text = fourthChoice[0];
         audioSource = GameObject.FindGameObjectsWithTag("ClickSound")[0].GetComponent<AudioSource>();
         audioClip = audioSource.clip;
+    }
+
+    private void Awake()
+    {
+        idOfPlayer = PlayerPrefs.GetString("PlayerID");
     }
 
     // Update is called once per frame
@@ -48,7 +54,7 @@ public class Choice4 : MonoBehaviour
         Debug.Log("The current question index is: " + TextControl.currentQuestionIndex);
         Debug.Log("The player's choice is " + TextControl.selectedAnswer);
 
-        Analytics.CustomEvent("Quiz Data", new Dictionary<string, object>
+        Analytics.CustomEvent(idOfPlayer, new Dictionary<string, object>
       {
         { "Index of the current Question: " + TextControl.currentQuestionIndex.ToString(),
                     "Player's Choice: " + TextControl.selectedAnswer}

@@ -115,6 +115,7 @@
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice4.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice5.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice6.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\GetInputFromInputField.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\HighlightText.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\NextButton.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ButtonControl.cs" />
