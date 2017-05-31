@@ -26,6 +26,7 @@ public class PlayerAttributesSetter : MonoBehaviour {
     public float weeklyIncome;
     public float annualIncome;
     public float currentSavingsAmount;
+    public int isEnrolledInSchool = 0;   // player prefs doesn't have bool, this is a workaround
 
 
 
@@ -69,6 +70,8 @@ public class PlayerAttributesSetter : MonoBehaviour {
         PlayerPrefs.SetFloat("CurrentSavingsAmount", currentSavingsAmount);
         PlayerPrefs.SetFloat("SavingsFactor", savingsFactor);
         PlayerPrefs.SetFloat("WeeklyIncome", weeklyIncome);
+        PlayerPrefs.SetInt("IsEnrolledInSchool", isEnrolledInSchool);
+
 
 
 

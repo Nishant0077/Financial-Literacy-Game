@@ -16,7 +16,7 @@ public class AssociatesButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
-        Debug.Log("Assocaites program selected");
+        Debug.Log("Associates program selected");
         weeklyIncome = 20 * hourlyWage;
         savingsAmount = savingsAmount - costOfProgram;
         PlayerPrefs.SetFloat("WeeklyIncome", weeklyIncome);
