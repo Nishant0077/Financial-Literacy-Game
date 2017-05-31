@@ -6,26 +6,25 @@ using UnityEngine.Analytics;
 public class Choice3 : MonoBehaviour
 {
 
-    List<string> thirdChoice = new List<string>
-        {
-            "2", "2","2","2","2","2","2","2","2","2","2"
+    int choiceInt = 2;
+    string choiceText = "2";
 
-        };
-
-     TextControl tc;
-     NextButton nb;
+    TextControl tc = new TextControl();
+    NextButton nb;
     AudioSource audioSource;
     AudioClip audioClip;
     public string idOfPlayer;
 
+
     // Use this for initialization
     void Start()
     {
-        tc = GetComponent<TextControl>();
+        
         nb = GetComponent<NextButton>();
-        GetComponent<TextMesh>().text = thirdChoice[0];
+        GetComponent<TextMesh>().text = choiceText;
         audioSource = GameObject.FindGameObjectsWithTag("ClickSound")[0].GetComponent<AudioSource>();
         audioClip = audioSource.clip;
+
     }
 
     private void Awake()
@@ -38,8 +37,8 @@ public class Choice3 : MonoBehaviour
     {
         if (TextControl.currentQuestionIndex > -1)
         {
-            GetComponent<TextMesh>().text = thirdChoice[TextControl.currentQuestionIndex];
-          //  Debug.Log(firstChoice[TextControl.randQuestions]);
+            GetComponent<TextMesh>().text = choiceText;
+            // Debug.Log(firstChoice[TextControl.randQuestions]);
         }
     }
 
@@ -47,9 +46,10 @@ public class Choice3 : MonoBehaviour
     {
         audioSource.PlayOneShot(audioClip);
         TextControl.selectedAnswer = gameObject.name;
-        
-            TextControl.playerChoices.Add(TextControl.selectedAnswer);
-        Debug.Log("Answer chosen");
+
+
+        TextControl.playerChoices.Add(choiceInt);
+        // Debug.Log(TextControl.selectedAnswer);
 
         Debug.Log("The current question index is: " + TextControl.currentQuestionIndex);
         Debug.Log("The player's choice is " + TextControl.selectedAnswer);
@@ -65,7 +65,7 @@ public class Choice3 : MonoBehaviour
             TextControl.currentQuestionIndex++;
 
         else if (TextControl.currentQuestionIndex == TextControl.numberOfQuestions - 1)
-            TextControl.currentQuestionIndex = 0;
+            tc.DoStuffWhenQuizEnds();
 
     }
 }

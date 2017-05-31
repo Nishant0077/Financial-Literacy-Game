@@ -23,9 +23,11 @@ public class TextControl : MonoBehaviour {
 
     public static string selectedAnswer;
     public static int currentQuestionIndex = 0;
-    public static List<string> playerChoices = new List<string>();
+    public static List<int> playerChoices = new List<int>();
+    public static List<int> choiceAverages = new List<int>();
     public TextMesh nextButton;
     public static int numberOfQuestions;
+    public static bool isOver = false;
     
     // NextButton nb;
 
@@ -40,13 +42,27 @@ public class TextControl : MonoBehaviour {
 
        
             GetComponent<TextMesh>().text = questions[currentQuestionIndex];
-
-
-
-        // nb.isClicked = false;
-       
+        
         
         }
+
+    public void DoStuffWhenQuizEnds()
+    {       
+        // calculate and store averages
+            for (int i = 0; i < playerChoices.Count - 1; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    int average = (playerChoices[i] + playerChoices[i + 1]) / 2;
+                    choiceAverages.Add(average);
+                }
+            }
+
+        for (int i = 0; i < choiceAverages.Count; i++)
+        {
+            Debug.Log(choiceAverages[i] + " ");
+        }
+    }
     
     }
 
