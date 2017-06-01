@@ -12,7 +12,7 @@ public class Choice1 : MonoBehaviour {
     NextButton nb;
     AudioSource audioSource;
     AudioClip audioClip;
-    public string idOfPlayer;
+    public string idOfPlayer;          // id of player will be the time they started the quiz
 
 
     // Use this for initialization

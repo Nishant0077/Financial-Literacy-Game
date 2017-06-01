@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TextControl : MonoBehaviour {
 
@@ -28,21 +29,21 @@ public class TextControl : MonoBehaviour {
     public TextMesh nextButton;
     public static int numberOfQuestions;
     public static bool isOver = false;
+    string gameOverScene = "gameOverScene";
     
     // NextButton nb;
 
 	// Use this for initialization
 	void Start () {
         numberOfQuestions = questions.Count;
+        Debug.Log(PlayerPrefs.GetString("PlayerID"));
 
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update() {       
 
-       
-            GetComponent<TextMesh>().text = questions[currentQuestionIndex];
-        
+            GetComponent<TextMesh>().text = questions[currentQuestionIndex];    
         
         }
 
@@ -57,11 +58,15 @@ public class TextControl : MonoBehaviour {
                     choiceAverages.Add(average);
                 }
             }
-
+        
+            // print out the averages, for testing purposes only
         for (int i = 0; i < choiceAverages.Count; i++)
         {
             Debug.Log(choiceAverages[i] + " ");
         }
+
+        // change the scene to "Game Over Scene"
+        SceneManager.LoadScene(gameOverScene);
     }
     
     }
