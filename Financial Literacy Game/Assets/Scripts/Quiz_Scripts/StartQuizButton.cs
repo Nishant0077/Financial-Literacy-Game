@@ -12,4 +12,9 @@ public class StartQuizButton : MonoBehaviour {
         SceneManager.LoadScene(sceneToLoad);
         PlayerPrefs.SetString("PlayerID", System.DateTime.Now.ToString());
     }
+
+    public void takeToSecondQuiz()
+    {
+        SceneManager.LoadScene("secondQuiz");
+    }
 }

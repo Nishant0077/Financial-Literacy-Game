@@ -16,7 +16,7 @@ public class TextControl : MonoBehaviour {
         "You feel like you worry more than the average person",
         "If you could, would you completely change who you are",
 
-        "When you watch content online on sites like YouTube or Netflix, " +
+        "When you watch content online on sites like YouTube or Netflix," + '\n' +
         "you tend to watch new shows/movies rather than those that you’ve seen multiple times",
 
         "You are the risk taker in your friend group"
@@ -50,7 +50,7 @@ public class TextControl : MonoBehaviour {
     public void DoStuffWhenQuizEnds()
     {       
         // calculate and store averages
-            for (int i = 0; i < playerChoices.Count - 1; i++)
+            for (int i = 0; i < playerChoices.Count; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -66,7 +66,7 @@ public class TextControl : MonoBehaviour {
         }
 
         // change the scene to "Game Over Scene"
-        SceneManager.LoadScene(gameOverScene);
+        SceneManager.LoadScene("intermScene");
     }
     
     }
