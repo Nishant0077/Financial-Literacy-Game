@@ -54,12 +54,12 @@ public class Choice4 : MonoBehaviour
         Debug.Log("The current question index is: " + TextControl.currentQuestionIndex);
         Debug.Log("The player's choice is " + TextControl.selectedAnswer);
 
-        Analytics.CustomEvent(idOfPlayer, new Dictionary<string, object>
-      {
-        { "Index of the current Question: " + TextControl.currentQuestionIndex.ToString(),
-                    "Player's Choice: " + TextControl.selectedAnswer}
+      //  Analytics.CustomEvent(idOfPlayer, new Dictionary<string, object>
+      //{
+      //  { "Index of the current Question: " + TextControl.currentQuestionIndex.ToString(),
+      //              "Player's Choice: " + TextControl.selectedAnswer}
 
-      });
+      //});
 
         if (TextControl.currentQuestionIndex < TextControl.numberOfQuestions - 1)
             TextControl.currentQuestionIndex++;

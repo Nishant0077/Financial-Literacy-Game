@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+
 
 public class TextControl : MonoBehaviour {
 
@@ -20,6 +22,15 @@ public class TextControl : MonoBehaviour {
         "you tend to watch new shows/movies rather than those that you’ve seen multiple times",
 
         "You are the risk taker in your friend group"
+    };
+
+    List<string> personalityCatagories = new List<string>
+    {
+        "Opennes to Experience",
+        "Conscientiousness",
+        "Extroversion",
+        "Agreeableness",
+        "Neuroticism"
     };
 
     public static string selectedAnswer;
@@ -62,7 +73,13 @@ public class TextControl : MonoBehaviour {
             // print out the averages, for testing purposes only
         for (int i = 0; i < choiceAverages.Count; i++)
         {
-            Debug.Log(choiceAverages[i] + " ");
+            Analytics.CustomEvent(PlayerPrefs.GetString("PlayerID"), new Dictionary<string, object>
+          {
+            {personalityCatagories[i].ToString() + " Score: " + choiceAverages[i].ToString(),
+            choiceAverages[i]
+        }
+
+    });
         }
 
         // change the scene to "Game Over Scene"
