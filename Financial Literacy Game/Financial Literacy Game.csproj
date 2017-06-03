@@ -120,6 +120,12 @@
     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ButtonControl.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\QuizController.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\TextChanger.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondChoice2.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondChoice3.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondChoice4.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondChoice5.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondChoice6.cs" />
+    <Compile Include="Assets\Scripts\Quiz_Scripts\SecondTextControl.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\StartQuizButton.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\TextControl.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\TextMeshResize.cs" />

@@ -148,7 +148,7 @@ public class SecondTextControl : MonoBehaviour
             Debug.Log(choiceAverages[i]);
             Analytics.CustomEvent(PlayerPrefs.GetString("PlayerID"), new Dictionary<string, object>
           {
-            {personalityCatagories[i].ToString() + " Score: " + choiceAverages[i].ToString(),
+            {personalityCatagories[i].ToString() + " Score: ",
             choiceAverages[i]
         }
 

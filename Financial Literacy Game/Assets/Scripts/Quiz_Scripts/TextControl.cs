@@ -75,7 +75,7 @@ public class TextControl : MonoBehaviour {
         {
             Analytics.CustomEvent(PlayerPrefs.GetString("PlayerID"), new Dictionary<string, object>
           {
-            {personalityCatagories[i].ToString() + " Score: " + choiceAverages[i].ToString(),
+            {personalityCatagories[i].ToString() + " Score: ",
             choiceAverages[i]
         }
 
