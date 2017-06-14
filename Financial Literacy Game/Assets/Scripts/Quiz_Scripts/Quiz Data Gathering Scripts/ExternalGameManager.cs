@@ -5,11 +5,12 @@ using System.Linq;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class ExternalGameManager : MonoBehaviour
+{
 
-    public Question[] questions;
-    public static List<Question> unansweredQuestions;
-    private Question currentQuestion;
+    public ExternalQuestion[] questions;
+    public static List<ExternalQuestion> unansweredQuestions;
+    private ExternalQuestion currentQuestion;
 
     static List<float> opennessScore = new List<float>();
     static List<float> conscientiousnessScore = new List<float>();
@@ -19,11 +20,11 @@ public class GameManager : MonoBehaviour {
 
     public static int questionIndex;
 
-    public float opennessLevel = 0;
-    public float conscientiousnessLevel = 0;
-    public float extraversionLevel = 0;
-    public float agreeablenessLevel = 0;
-    public float neuroticismLevel = 0;
+    public float opennessLevel = 8;
+    public float conscientiousnessLevel = 14;
+    public float extraversionLevel = 20;
+    public float agreeablenessLevel = 14;
+    public float neuroticismLevel = 38;
 
     public static bool replaceResponse = false;
 
@@ -34,111 +35,131 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private Slider playerInput;
 
-    void Start() {
+    private float playerResponse = 0;
 
-        if (unansweredQuestions == null) {
-            unansweredQuestions = questions.ToList<Question>();
+    void Start()
+    {
+
+        if (unansweredQuestions == null)
+        {
+            unansweredQuestions = questions.ToList<ExternalQuestion>();
         }
 
         if (questionIndex == unansweredQuestions.Count)
         {
-            opennessLevel = opennessScore.Average();
-            conscientiousnessLevel = conscientiousnessScore.Average();
-            neuroticismLevel = neuroticismScore.Average();
-            extraversionLevel = extraversionScore.Average();
-            agreeablenessLevel = agreeablenessScore.Average();
+            opennessLevel += opennessScore.Sum();
+            conscientiousnessLevel += conscientiousnessScore.Sum();
+            neuroticismLevel += neuroticismScore.Sum();
+            extraversionLevel += extraversionScore.Sum();
+            agreeablenessLevel += agreeablenessScore.Sum();
 
             Debug.Log(QuizResults());
-            SceneManager.LoadScene("HalfTime");
+            SceneManager.LoadScene("QuizEnd");
         }
 
         currentQuestion = unansweredQuestions[questionIndex];
         questionText.text = currentQuestion.question;
     }
 
-    public void NextQuestion() {
+    public void NextQuestion()
+    {
 
         if (backTurns > 0)
         {
             replaceResponse = true;
             backTurns = backTurns - 1;
         }
-        else {
+        else
+        {
             replaceResponse = false;
+        }
+
+        if (!currentQuestion.addScore)
+        {
+            playerResponse = -(playerInput.value);
+        }
+        else {
+            playerResponse = playerInput.value;
         }
 
         if (!replaceResponse)
         {
             switch (currentQuestion.personality)
             {
-                case Question.questionType.Openness:
-                    opennessScore.Add(playerInput.value);
+                case ExternalQuestion.questionType.Openness:
+                    opennessScore.Add(playerResponse);
                     break;
-                case Question.questionType.Agreeableness:
-                    agreeablenessScore.Add(playerInput.value);
+                case ExternalQuestion.questionType.Agreeableness:
+                    agreeablenessScore.Add(playerResponse);
                     break;
-                case Question.questionType.Conscientiousness:
-                    conscientiousnessScore.Add(playerInput.value);
+                case ExternalQuestion.questionType.Conscientiousness:
+                    conscientiousnessScore.Add(playerResponse);
                     break;
-                case Question.questionType.Neuroticism:
-                    neuroticismScore.Add(playerInput.value);
+                case ExternalQuestion.questionType.Neuroticism:
+                    neuroticismScore.Add(playerResponse);
                     break;
-                case Question.questionType.Extraversion:
-                    extraversionScore.Add(playerInput.value);
+                case ExternalQuestion.questionType.Extraversion:
+                    extraversionScore.Add(playerResponse);
                     break;
                 default:
                     throw new System.ArgumentException("Not valid personality");
             }
         }
-        else {
+        else
+        {
 
             Debug.Log(questionIndex);
             Debug.Log("What is going on: " + (questionIndex % 2));
             switch (currentQuestion.personality)
             {
-                case Question.questionType.Openness:
+                case ExternalQuestion.questionType.Openness:
                     if (opennessScore.Count != 0)
                     {
-                        opennessScore[questionIndex % 2] = playerInput.value;
+                        opennessScore[questionIndex % 10] = playerResponse;
                     }
-                    else{
-                        opennessScore.Add(playerInput.value);
-                    }
-                    break;
-                case Question.questionType.Agreeableness:
-                    if (agreeablenessScore.Count != 0)
+                    else
                     {
-                        agreeablenessScore[questionIndex % 2] = playerInput.value;
-                    }
-                    else {
-                        agreeablenessScore.Add(playerInput.value);
+                        opennessScore.Add(playerResponse);
                     }
                     break;
-                case Question.questionType.Conscientiousness:
+                case ExternalQuestion.questionType.Agreeableness:
+                    if (agreeablenessScore.Count != 10)
+                    {
+                        agreeablenessScore[questionIndex % 10] = playerResponse;
+                    }
+                    else
+                    {
+                        agreeablenessScore.Add(playerResponse);
+                    }
+                    break;
+                case ExternalQuestion.questionType.Conscientiousness:
                     if (conscientiousnessScore.Count != 0)
                     {
-                        conscientiousnessScore[questionIndex % 2] = playerInput.value;
+                        conscientiousnessScore[questionIndex % 10] = playerResponse;
                     }
-                    else {
-                        conscientiousnessScore.Add(playerInput.value);
+                    else
+                    {
+                        conscientiousnessScore.Add(playerResponse);
                     }
                     break;
-                case Question.questionType.Neuroticism:
+                case ExternalQuestion.questionType.Neuroticism:
                     if (neuroticismScore.Count != 0)
                     {
-                        neuroticismScore[questionIndex % 2] = playerInput.value;
+                        neuroticismScore[questionIndex % 10] = playerResponse;
                     }
-                    else {
-                        neuroticismScore.Add(playerInput.value);
+                    else
+                    {
+                        neuroticismScore.Add(playerResponse);
                     }
                     break;
-                case Question.questionType.Extraversion:
+                case ExternalQuestion.questionType.Extraversion:
                     if (extraversionScore.Count != 0)
                     {
-                        extraversionScore[questionIndex % 2] = playerInput.value;
+                        extraversionScore[questionIndex % 10] = playerResponse;
                     }
-                    else {
-                        extraversionScore.Add(playerInput.value);
+                    else
+                    {
+                        extraversionScore.Add(playerResponse);
                     }
                     break;
                 default:
@@ -151,14 +172,16 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void GoBack() {
+    public void GoBack()
+    {
         backTurns = backTurns + 1;
         questionIndex = questionIndex - 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         replaceResponse = true;
     }
 
-    public string QuizResults() {
+    public string QuizResults()
+    {
         string quizResults = null;
         quizResults = quizResults + "Quiz Results: ";
 
@@ -217,11 +240,13 @@ public class GameManager : MonoBehaviour {
         return quizResults;
     }
 
-    public void LoadFirstScene() {
+    public void LoadFirstScene()
+    {
         SceneManager.LoadScene("FirstQuiz");
     }
 
-    public void LoadSecondQuiz() {
+    public void LoadSecondQuiz()
+    {
         SceneManager.LoadScene("SecondQuiz");
     }
 }
