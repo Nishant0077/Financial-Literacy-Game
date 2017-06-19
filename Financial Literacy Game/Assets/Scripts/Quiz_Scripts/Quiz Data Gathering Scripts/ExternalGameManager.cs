@@ -34,8 +34,17 @@ public class ExternalGameManager : MonoBehaviour
     private Text questionText;
     [SerializeField]
     private Slider playerInput;
+    [SerializeField]
+    private Button nextButton;
+    [SerializeField]
+    private Button backButton;
+    [SerializeField]
+    private Text agreeText;
+    [SerializeField]
+    private Text disagreeText;
 
     private float playerResponse = 0;
+
 
     void Start()
     {
@@ -164,9 +173,13 @@ public class ExternalGameManager : MonoBehaviour
             extraversionLevel += extraversionScore.Sum();
             agreeablenessLevel += agreeablenessScore.Sum();
 
-            Debug.Log("HEer");
+            Destroy(nextButton);
+            Destroy(backButton);
+            Destroy(agreeText);
+            Destroy(disagreeText);
+            Destroy(playerInput);
+
             sendQuizResults();
-            SceneManager.LoadScene("QuizEnd");
         }
         else
         {
@@ -286,7 +299,6 @@ public class ExternalGameManager : MonoBehaviour
     IEnumerator WaitForRequest(WWW www) {
 
         yield return www;
-        Debug.Log("fuck yeah");
 
         if (www.error == null)
         {
