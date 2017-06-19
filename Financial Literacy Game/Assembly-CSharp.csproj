@@ -170,6 +170,7 @@
      <Compile Include="Assets\Scripts\Quiz_Scripts\Choice6.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\HighlightText.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\NextButton.cs" />
+     <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ButtonControl.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ExternalGameManager.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\ExternalQuestion.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\Quiz Data Gathering Scripts\GameManager.cs" />

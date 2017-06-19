@@ -20,11 +20,11 @@ public class ExternalGameManager : MonoBehaviour
 
     public static int questionIndex;
 
-    public float opennessLevel = 8;
-    public float conscientiousnessLevel = 14;
-    public float extraversionLevel = 20;
-    public float agreeablenessLevel = 14;
-    public float neuroticismLevel = 38;
+    static public float opennessLevel = 8;
+    static public float conscientiousnessLevel = 14;
+    static public float extraversionLevel = 20;
+    static public float agreeablenessLevel = 14;
+    static public float neuroticismLevel = 38;
 
     public static bool replaceResponse = false;
 
@@ -44,21 +44,9 @@ public class ExternalGameManager : MonoBehaviour
         {
             unansweredQuestions = questions.ToList<ExternalQuestion>();
         }
-
-        if (questionIndex == unansweredQuestions.Count)
-        {
-            opennessLevel += opennessScore.Sum();
-            conscientiousnessLevel += conscientiousnessScore.Sum();
-            neuroticismLevel += neuroticismScore.Sum();
-            extraversionLevel += extraversionScore.Sum();
-            agreeablenessLevel += agreeablenessScore.Sum();
-
-            Debug.Log(QuizResults());
-            SceneManager.LoadScene("QuizEnd");
-        }
-
-        currentQuestion = unansweredQuestions[questionIndex];
-        questionText.text = currentQuestion.question;
+            currentQuestion = unansweredQuestions[questionIndex];
+            questionText.text = currentQuestion.question;
+  
     }
 
     public void NextQuestion()
@@ -168,8 +156,22 @@ public class ExternalGameManager : MonoBehaviour
         }
 
         questionIndex = questionIndex + 1;
-        Debug.Log(QuizResults());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (questionIndex == unansweredQuestions.Count)
+        {
+            opennessLevel += opennessScore.Sum();
+            conscientiousnessLevel += conscientiousnessScore.Sum();
+            neuroticismLevel += neuroticismScore.Sum();
+            extraversionLevel += extraversionScore.Sum();
+            agreeablenessLevel += agreeablenessScore.Sum();
+
+            Debug.Log("HEer");
+            sendQuizResults();
+            SceneManager.LoadScene("QuizEnd");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void GoBack()
@@ -240,13 +242,58 @@ public class ExternalGameManager : MonoBehaviour
         return quizResults;
     }
 
-    public void LoadFirstScene()
-    {
-        SceneManager.LoadScene("FirstQuiz");
+    void sendQuizResults() {
+        WWWForm form = new WWWForm();
+        form.AddField("timeIDPost", System.DateTime.Now.ToString());
+
+        form.AddField("tqOpennessPost", GameManager.opennessLevel.ToString());
+        form.AddField("tqConscientiousnessPost", GameManager.conscientiousnessLevel.ToString());
+        form.AddField("tqNeuroticismPost", GameManager.neuroticismLevel.ToString());
+        form.AddField("tqAgreeablenessPost", GameManager.agreeablenessLevel.ToString());
+        form.AddField("tqExtraversionPost", GameManager.extraversionLevel.ToString());
+
+
+        form.AddField("tqCreditScorePost", (600 + (20 * (GameManager.opennessLevel - GameManager.extraversionLevel))).ToString());
+        form.AddField("tqStartingSalaryPost", (10 + (GameManager.extraversionLevel + GameManager.agreeablenessLevel) / 2).ToString());
+
+        int sPercentage = 5 + (int) GameManager.conscientiousnessLevel * 3;
+        int dPercentage = 20 + (int)GameManager.neuroticismLevel * 2;
+        int fPercentage = 100 - sPercentage - dPercentage;
+        form.AddField("tqSavingPercentagePost", sPercentage);
+        form.AddField("tqDiscretionaryPercentagePost", dPercentage);
+        form.AddField("tqFixedPercentagePost", fPercentage);
+        
+        form.AddField("cqOpennessPostPost", opennessLevel.ToString());
+        form.AddField("cqConscientiousnessPost", conscientiousnessLevel.ToString());
+        form.AddField("cqNeuroticismPost", neuroticismLevel.ToString());
+        form.AddField("cqAgreeablenessPost", agreeablenessLevel.ToString());
+        form.AddField("cqExtraversionPost", extraversionLevel.ToString());
+
+        form.AddField("cqCreditScorePost", (600 + (20 * (opennessLevel - extraversionLevel))).ToString());
+        form.AddField("cqStartingSalaryPost", (10 + (extraversionLevel + agreeablenessLevel) / 2).ToString());
+
+        sPercentage = 5 + (int)conscientiousnessLevel * 3;
+        dPercentage = 20 + (int)neuroticismLevel * 2;
+        fPercentage = 100 - sPercentage - dPercentage;
+        form.AddField("cqSavingPercentagePost", sPercentage);
+        form.AddField("cqDiscretionaryPercentagePost", dPercentage);
+        form.AddField("cqFixedPercentagePost", fPercentage);
+        Debug.Log("Here too");
+        WWW www = new WWW("http://thrivefinancialgamedatabase.000webhostapp.com/QuizResults.php", form);
+        StartCoroutine(WaitForRequest(www));
     }
 
-    public void LoadSecondQuiz()
-    {
-        SceneManager.LoadScene("SecondQuiz");
+    IEnumerator WaitForRequest(WWW www) {
+
+        yield return www;
+        Debug.Log("fuck yeah");
+
+        if (www.error == null)
+        {
+            Debug.Log("WWW Ok!: " + www.text);
+        }
+        else {
+            Debug.Log("WWW Error: " + www.error);
+        }
     }
 }

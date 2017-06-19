@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour {
     static List<float> agreeablenessScore = new List<float>();
     static List<float> neuroticismScore = new List<float>();
 
-    public static int questionIndex;
+    public static int questionIndex = 0;
 
-    public float opennessLevel = 0;
-    public float conscientiousnessLevel = 0;
-    public float extraversionLevel = 0;
-    public float agreeablenessLevel = 0;
-    public float neuroticismLevel = 0;
+    static public float opennessLevel = 0;
+    static public float conscientiousnessLevel = 0;
+    static public float extraversionLevel = 0;
+    static public float agreeablenessLevel = 0;
+    static public float neuroticismLevel = 0;
 
     public static bool replaceResponse = false;
 
@@ -40,20 +40,9 @@ public class GameManager : MonoBehaviour {
             unansweredQuestions = questions.ToList<Question>();
         }
 
-        if (questionIndex == unansweredQuestions.Count)
-        {
-            opennessLevel = opennessScore.Average();
-            conscientiousnessLevel = conscientiousnessScore.Average();
-            neuroticismLevel = neuroticismScore.Average();
-            extraversionLevel = extraversionScore.Average();
-            agreeablenessLevel = agreeablenessScore.Average();
-
-            Debug.Log(QuizResults());
-            SceneManager.LoadScene("HalfTime");
-        }
-
         currentQuestion = unansweredQuestions[questionIndex];
         questionText.text = currentQuestion.question;
+       
     }
 
     public void NextQuestion() {
@@ -91,9 +80,6 @@ public class GameManager : MonoBehaviour {
             }
         }
         else {
-
-            Debug.Log(questionIndex);
-            Debug.Log("What is going on: " + (questionIndex % 2));
             switch (currentQuestion.personality)
             {
                 case Question.questionType.Openness:
@@ -147,8 +133,20 @@ public class GameManager : MonoBehaviour {
         }
 
         questionIndex = questionIndex + 1;
-        Debug.Log(QuizResults());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (questionIndex == unansweredQuestions.Count)
+        {
+            opennessLevel = opennessScore.Average();
+            conscientiousnessLevel = conscientiousnessScore.Average();
+            neuroticismLevel = neuroticismScore.Average();
+            extraversionLevel = extraversionScore.Average();
+            agreeablenessLevel = agreeablenessScore.Average();
+            Debug.Log(QuizResults());
+            SceneManager.LoadScene("HalfTime");
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void GoBack() {
