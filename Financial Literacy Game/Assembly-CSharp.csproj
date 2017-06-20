@@ -46,57 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Core\API.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Core\Reader.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Core\Settings.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Data\SpreadsheetData.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Enum\DataType.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Enum\RanageDirection.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Enum\VariableType.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\Cell.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\CellDictionaryRange.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\CellRange.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\DataComponentConnection.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\DataDelegate.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\DocTemplate.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\GoogleData.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Models\WorksheetTemplate.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Utils\TPMiniJSON.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\Utils\WWWDocLoader.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\xExample\Scripts\DocDataRertivalExamle.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\xExample\Scripts\ExampleSpawner1.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\xExample\Scripts\ExampleSpawner2.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\xExample\Scripts\GD_ExampleDataScript.cs" />
-     <Compile Include="Assets\Extensions\GoogleDocConnector\xExample\Scripts\LocalizationFromDocExample.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Core\SA_Config.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Advertisement\SA_Ad_EditorUIController.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Advertisement\SA_EditorAd.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\InAppPurchaces\SA_EditorInApps.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\InAppPurchaces\SA_InApps_EditorUIController.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Notifications\SA_EditorNotificationType.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Notifications\SA_EditorNotifications.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Notifications\SA_Notifications_EditorUIController.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Utilities\SA_EditorTesting.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Utilities\SA_UIHightDependence.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\Utilities\SA_UIWidthDependence.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\EditorTesting\xTextScene\SA_EditorTestingSceneController.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Enums\SA_EaseType.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Methods\SA_TweenExtensions.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Methods\SA_TweenedGameobject.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Methods\SA_ValuesTween.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Pixelplacement\iTween\iTween.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Effetcs\Screen\SA_ScreenShotMaker.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Data\SA_DataConverter.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Extensions\SA_Gameobject.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Loaders\SA_FileStaticAPI.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Loaders\SA_PrefabAsyncLoader.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Loaders\SA_WWWTextureLoader.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Modules\SA_ModulesInfo.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Patterns\SA_IdFactory.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Patterns\SA_NonMonoSingleton.cs" />
-     <Compile Include="Assets\Extensions\StansAssetsCommon\Utilities\Patterns\SA_Singleton.cs" />
-     <Compile Include="Assets\MaterialUI\Examples\Scripts\04 - RadioButton\Example04.cs" />
-     <Compile Include="Assets\MaterialUI\Examples\Scripts\05 - Sliders\Example05.cs" />
      <Compile Include="Assets\MaterialUI\Scripts\Anim.cs" />
      <Compile Include="Assets\MaterialUI\Scripts\ButtonInteractableControl.cs" />
      <Compile Include="Assets\MaterialUI\Scripts\CheckBoxToggler.cs" />
@@ -184,12 +133,7 @@
      <Compile Include="Assets\Scripts\Quiz_Scripts\StartQuizButton.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\TextControl.cs" />
      <Compile Include="Assets\Scripts\Quiz_Scripts\TextMeshResize.cs" />
-     <None Include="Assets\Extensions\GoogleDocConnector\Resources\Cache\Personality Quiz Data.txt" />
      <None Include="Assets\MaterialUI\Fonts\NOTICE.txt" />
-     <None Include="Assets\Extensions\StansAssetsCommon\Effetcs\Animations\Tween\Pixelplacement\iTween\ReadMe!.txt" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Gus/Documents/Git Repositories/financial-literacy-game/Financial Literacy Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

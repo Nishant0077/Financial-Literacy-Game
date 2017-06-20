@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Quiz_Scenes/Quiz 2.0/SecondQuiz.unity
+- path: Assets/Scenes/Quiz_Scenes/Quiz 2.0/FirstQuiz.unity
   isLoaded: 1
   isActive: 1
