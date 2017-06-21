@@ -276,7 +276,7 @@ public class ExternalGameManager : MonoBehaviour
         form.AddField("tqDiscretionaryPercentagePost", dPercentage);
         form.AddField("tqFixedPercentagePost", fPercentage);
         
-        form.AddField("cqOpennessPostPost", opennessLevel.ToString());
+        form.AddField("cqOpennessPost", opennessLevel.ToString());
         form.AddField("cqConscientiousnessPost", conscientiousnessLevel.ToString());
         form.AddField("cqNeuroticismPost", neuroticismLevel.ToString());
         form.AddField("cqAgreeablenessPost", agreeablenessLevel.ToString());
@@ -292,7 +292,7 @@ public class ExternalGameManager : MonoBehaviour
         form.AddField("cqDiscretionaryPercentagePost", dPercentage);
         form.AddField("cqFixedPercentagePost", fPercentage);
         Debug.Log("Here too");
-        WWW www = new WWW("http://thrivefinancialgamedatabase.000webhostapp.com/QuizResults.php", form);
+        WWW www = new WWW("https://thrivefinancialgamedatabase.000webhostapp.com/QuizResults.php", form);
         StartCoroutine(WaitForRequest(www));
     }
 

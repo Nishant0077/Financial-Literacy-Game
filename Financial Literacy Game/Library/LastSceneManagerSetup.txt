@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Quiz_Scenes/quizDataGatheringScene.unity
+- path: Assets/Scenes/Quiz_Scenes/Quiz 2.0/QuizStart.unity
   isLoaded: 1
   isActive: 1
