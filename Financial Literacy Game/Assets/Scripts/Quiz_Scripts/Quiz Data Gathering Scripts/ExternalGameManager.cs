@@ -165,8 +165,9 @@ public class ExternalGameManager : MonoBehaviour
         }
 
         questionIndex = questionIndex + 1;
-        if (questionIndex == unansweredQuestions.Count)
+        if (questionIndex == unansweredQuestions.Count-1)
         {
+            questionText.text = unansweredQuestions[questionIndex].question;
             opennessLevel += opennessScore.Sum();
             conscientiousnessLevel += conscientiousnessScore.Sum();
             neuroticismLevel += neuroticismScore.Sum();
