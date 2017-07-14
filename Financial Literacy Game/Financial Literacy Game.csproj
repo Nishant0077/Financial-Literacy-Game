@@ -151,6 +151,15 @@
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GEDProgramButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GameControllerSchool.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\NoSchoolButton.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\BackToInboxButton.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\DisplayCreditScore.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\DisplayHourlyWage.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\DisplaySavingsAmount.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\DisplayTaxRate.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\LoadCreditScoreScene.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\LoadHourlyWageScene.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\LoadSavingsAmountScene.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\LoadTaxRateScene.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice3.cs" />

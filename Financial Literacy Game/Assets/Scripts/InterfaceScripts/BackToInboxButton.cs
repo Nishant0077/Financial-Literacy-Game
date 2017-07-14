@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestSceneNextButton : MonoBehaviour {
+public class BackToInboxButton : MonoBehaviour {
 
     private string sceneToLoad = "EmailInterface";
 

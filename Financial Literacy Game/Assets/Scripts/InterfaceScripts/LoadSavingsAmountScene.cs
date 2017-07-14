@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestSceneNextButton : MonoBehaviour {
+public class LoadSavingsAmountScene : MonoBehaviour {
 
-    private string sceneToLoad = "EmailInterface";
+    private string sceneToLoad = "SavingsAmountScene";
 
     public void OnMouseDown()
     {
