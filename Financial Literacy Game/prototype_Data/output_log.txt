@@ -1,0 +1,128 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) R7 Graphics (ID=0x130f)
+    Vendor:   ATI
+    VRAM:     992 MB
+    Driver:   22.19.162.4
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Gus\Documents\Repositories\Financial Literacy Game\financial-literacy-game\Financial Literacy Game\prototype_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.030 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.911842 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.779756 ms
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.527469 ms (FindLiveObjects: 0.058552 ms CreateObjectMapping: 0.033279 ms MarkObjects: 0.396352 ms  DeleteObjects: 0.037533 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.829238 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.479927 ms (FindLiveObjects: 0.087327 ms CreateObjectMapping: 0.030777 ms MarkObjects: 0.353564 ms  DeleteObjects: 0.007256 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.909810 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.409864 ms (FindLiveObjects: 0.054798 ms CreateObjectMapping: 0.028525 ms MarkObjects: 0.320285 ms  DeleteObjects: 0.005504 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.625557 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.409114 ms (FindLiveObjects: 0.054548 ms CreateObjectMapping: 0.028775 ms MarkObjects: 0.319034 ms  DeleteObjects: 0.005504 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.629310 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.434386 ms (FindLiveObjects: 0.047792 ms CreateObjectMapping: 0.031027 ms MarkObjects: 0.346308 ms  DeleteObjects: 0.008257 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.644073 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.418372 ms (FindLiveObjects: 0.047041 ms CreateObjectMapping: 0.028275 ms MarkObjects: 0.335548 ms  DeleteObjects: 0.006505 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.659837 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.383341 ms (FindLiveObjects: 0.044789 ms CreateObjectMapping: 0.028024 ms MarkObjects: 0.304521 ms  DeleteObjects: 0.005004 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.583269 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.397103 ms (FindLiveObjects: 0.042788 ms CreateObjectMapping: 0.037283 ms MarkObjects: 0.310276 ms  DeleteObjects: 0.005254 ms)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[Question].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameManager.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: d84 -> priority: 1 
+  Thread -> id: cb4 -> priority: 1 
