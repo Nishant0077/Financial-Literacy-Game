@@ -29,4 +29,12 @@ public class ButtonManager : MonoBehaviour {
     public void eLedgerAction() {
         SceneManager.LoadScene("eledger_scene");
     }
+
+    public void emailZeroAction() {
+        SceneManager.LoadScene("email_0");
+    }
+
+    public void backPageFromEmail() {
+        SceneManager.LoadScene("email_scene");
+    }
 }
