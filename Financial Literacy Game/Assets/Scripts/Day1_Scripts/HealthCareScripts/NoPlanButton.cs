@@ -6,6 +6,7 @@ public class NoPlanButton : MonoBehaviour
 {
 
     HealthCareController hc;
+    TrackScenes ts = new TrackScenes();
     float monthlyDeduction = 0;
     float savingsWithNoPlan;
     // Use this for initialization
@@ -13,7 +14,7 @@ public class NoPlanButton : MonoBehaviour
     private void Start()
     {
         hc = GameObject.FindObjectOfType<HealthCareController>();
-        savingsWithNoPlan = PlayerPrefs.GetFloat("CurrentSavingsAmount");
+        savingsWithNoPlan = PlayerPrefs.GetFloat("CurrentSavingsAmount");        
     }
 
     public void OnMouseDown()
@@ -24,5 +25,6 @@ public class NoPlanButton : MonoBehaviour
         hc.currentPlan = HealthCareController.healthCarePlanType.No;
         PlayerPrefs.SetFloat("CurrentSavingsAmount", hc.projectedSavingsAmount);
         PlayerPrefs.SetString("CurrentHealthPlan", hc.currentPlan.ToString());
+        //ts.SendEmail();
     }
 }

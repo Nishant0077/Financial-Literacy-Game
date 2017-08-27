@@ -16,13 +16,12 @@ public class Choice1 : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
-       
+    void Start ()
+    {       
         nb = GetComponent<NextButton>();
         GetComponent<TextMesh>().text = choiceText;
         audioSource = GameObject.FindGameObjectsWithTag("ClickSound")[0].GetComponent<AudioSource>();
-        audioClip = audioSource.clip;
-        
+        audioClip = audioSource.clip;        
     }
 
     private void Awake()

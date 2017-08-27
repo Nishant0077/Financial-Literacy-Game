@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BasicPlanButton : MonoBehaviour
 {
-
     HealthCareController hc;
     float monthlyDeduction = 100;
     float savingsWithNoPlan;

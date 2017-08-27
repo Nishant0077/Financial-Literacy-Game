@@ -11,6 +11,7 @@ public class HealthCareController : MonoBehaviour {
     public enum healthCarePlanType {No, Basic, Standard, Premium};
 
     public healthCarePlanType currentPlan;
+    
 
 	
 }
