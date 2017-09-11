@@ -17,6 +17,8 @@ public class GEDProgramButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // set the back button active
+        GameControllerSchool.b.gameObject.SetActive(true);
         Debug.Log("GED program selected");
         weeklyIncome = 20 * hourlyWage;
         savingsAmount = savingsAmount - costOfProgram;

@@ -9,6 +9,9 @@ public class LoadScamScene : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // this button's index in the scene button list in Interface Manager script
+        PersistentManagerScript.currentlyClickedSceneButtonindex = 6;
         SceneManager.LoadScene(sceneToLoad);
+        
     }
 }

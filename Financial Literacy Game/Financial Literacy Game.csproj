@@ -142,8 +142,10 @@
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\Choice1ButtonScript.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\Choice2ButtonScript.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\CreditCardController.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\CreditCardGameController.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\CreditCardNextButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario1_Credit Card Purchase_Scripts\Day2_Scenario1_Button.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scam_Scripts\DoNothingButtonScript.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scam_Scripts\ScamButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scam_Scripts\ScamController.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario2_Scam_Scripts\ScamSceneNextButton.cs" />
@@ -161,6 +163,8 @@
     <Compile Include="Assets\Scripts\InterfaceScripts\DisplayHourlyWage.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\DisplaySavingsAmount.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\DisplayTaxRate.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\InterfaceManager.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadCreditCardPurchaseScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadCreditScoreScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadEmployerScene.cs" />
@@ -170,6 +174,7 @@
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadScamScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadSchoolScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadTaxRateScene.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\PersistentManagerScript.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\TrackScenes.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice1.cs" />
     <Compile Include="Assets\Scripts\Quiz_Scripts\Choice2.cs" />

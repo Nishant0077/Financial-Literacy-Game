@@ -9,6 +9,9 @@ public class LoadSchoolScene : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // this button's index in the scene button list in Interface Manager script
+        PersistentManagerScript.currentlyClickedSceneButtonindex = 8;
         SceneManager.LoadScene(sceneToLoad);
+       
     }
 }

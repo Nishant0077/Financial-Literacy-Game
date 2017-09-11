@@ -17,6 +17,7 @@ public class ScamButton : MonoBehaviour {
 
     private void Start()
     {
+      
         currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount") * 3;   // total 18 months have passed
         goalAmount = PlayerPrefs.GetInt("GoalAmount");
         boostAmount = (goalAmount - currentSavingsAmount);
@@ -28,6 +29,7 @@ public class ScamButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        ScamController.b.gameObject.SetActive(true);
         newSavingsAmount = currentSavingsAmount - punishmentAmount;
         buttonText.text = "You were scammed! *Laughs in evil*";
         newSavingsAmountText.text = "New Savings Amount: " + newSavingsAmount;

@@ -21,6 +21,8 @@ public class Choice1ButtonScript : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // activate the back to inbox button
+        CreditCardGameController.b.gameObject.SetActive(true);
         newSavingsAmount = ((currentSavingsAmount - (creditCardInterestFactor * priceOfPurchasedItem * 6)) - (25 * 6));
         newSavingsText.text = "Your new projected savings for next 6 months: " + newSavingsAmount;
 

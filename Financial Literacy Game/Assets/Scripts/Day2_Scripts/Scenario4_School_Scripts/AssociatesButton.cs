@@ -16,6 +16,8 @@ public class AssociatesButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // set the back button active
+        GameControllerSchool.b.gameObject.SetActive(true);
         Debug.Log("Associates program selected");
         weeklyIncome = 20 * hourlyWage;
         savingsAmount = savingsAmount - costOfProgram;

@@ -9,6 +9,9 @@ public class LoadTaxRateScene : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        // this button's index in the scene button list in Interface Manager script
+        PersistentManagerScript.currentlyClickedSceneButtonindex = 1;
         SceneManager.LoadScene(sceneToLoad);
+      
     }
 }

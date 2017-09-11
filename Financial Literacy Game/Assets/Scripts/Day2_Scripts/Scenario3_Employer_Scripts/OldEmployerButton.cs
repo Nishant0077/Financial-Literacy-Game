@@ -20,6 +20,8 @@ public class OldEmployerButton : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        GameController.b.gameObject.SetActive(true);
+
         //*********** player will be provided a bonus and a raise in wage*****************
 
         hourlyWage = hourlyWage + raiseInWage;
