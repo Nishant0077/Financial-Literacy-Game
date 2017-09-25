@@ -25,7 +25,7 @@ public class IllnessGeneratorScript : MonoBehaviour {
         currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
         currentSavingsText.text = "Current Savings Amount: " + currentSavingsAmount.ToString();
 
-        randomNumber = Random.Range(1, numberOfIllnessScenarios);
+        randomNumber = Random.Range(1, numberOfIllnessScenarios + 1);
 
         if (randomNumber == 1)   // no illness scenario 
         {
