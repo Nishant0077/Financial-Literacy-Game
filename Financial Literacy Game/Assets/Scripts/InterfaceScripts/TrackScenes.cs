@@ -18,13 +18,16 @@ public class TrackScenes : MonoBehaviour {
         {
             for (int i = 0; i < numberOfSceneButtons; i++)
             {
+                // all buttons' names must be of the form "ButtonX" where X is the index of the button
                 Button b = GameObject.FindGameObjectsWithTag("Button" + i)[0].GetComponentInChildren<Button>();
                 sceneButtonList.Add(b);
             }
 
-            PersistentManagerScript.Instance.hasFirstSceneBeenLoaded = true;
+            numberOfSceneButtons = sceneButtonList.Count;
+           // PersistentManagerScript.Instance.hasFirstSceneBeenLoaded = true;
         }
 
+        // all buttons after the healthcare scene must be inactive at the start
         for (int i = PersistentManagerScript.mostRecentActiveSceneButtonIndex;
             i < PersistentManagerScript.numberOfSceneButtons; i++)
         {
@@ -61,11 +64,5 @@ public class TrackScenes : MonoBehaviour {
 
     }
 	
-	public void SendEmail()
-    {
-        Debug.Log(sceneButtonList.Count);
-
-       // sceneButtonList[6].gameObject.SetActive(true);
-        
-    }
+	
 }

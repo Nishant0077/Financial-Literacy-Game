@@ -158,6 +158,7 @@
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GEDProgramButton.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\GameControllerSchool.cs" />
     <Compile Include="Assets\Scripts\Day2_Scripts\Scenario4_School_Scripts\NoSchoolButton.cs" />
+    <Compile Include="Assets\Scripts\Day2_Scripts\Scenario_Illness\IllnessGeneratorScript.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\BackToInboxButton.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\DisplayCreditScore.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\DisplayHourlyWage.cs" />
