@@ -6,20 +6,21 @@ using UnityEngine.UI;
 public class InterfaceManager : MonoBehaviour {
 
     public List<Button> sceneButtonList = new List<Button>();
-    public int numberOfSceneButtons = 9;
+    private int numberOfSceneButtons = 11;   // number of emails
     public int currentActiveSceneButtonIndex = 4;
 
     // Use this for initialization
     void Start () {
 
         // populating the list with the buttons in the scene
+        Debug.Log("Number of buttons: " + numberOfSceneButtons);
         for (int i = 0; i < numberOfSceneButtons; i++)
         {
             Button b = GameObject.FindGameObjectsWithTag("Button" + i)[0].GetComponentInChildren<Button>();
             sceneButtonList.Add(b);
         }
 
-        Debug.Log(sceneButtonList.Count);
+       
 
         // setting all buttons to inactive initially
         for (int i = 0; i < sceneButtonList.Count; i++)

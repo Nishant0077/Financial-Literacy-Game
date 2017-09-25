@@ -9,14 +9,21 @@ public class IllnessGeneratorScript : MonoBehaviour {
     int numberOfIllnessScenarios = 4;
     public Text illnessText;
     public Text impactOnSavingsText;
+    public Text currentSavingsText;
+    public Text newSavingsText;
     float noIllnessPenalty = 0;
     float illness1Penalty = 1000;
     float illness2Penalty = 2500;
     float illness3Penalty = 5000;
     float impactOnSavings;
+    float currentSavingsAmount;
+    float newSavingsAmount;
 
 	// Use this for initialization
 	void Start () {
+
+        currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
+        currentSavingsText.text = "Current Savings Amount: " + currentSavingsAmount.ToString();
 
         randomNumber = Random.Range(1, numberOfIllnessScenarios);
 
@@ -46,6 +53,9 @@ public class IllnessGeneratorScript : MonoBehaviour {
         }
 
         impactOnSavingsText.text = "Medical Bill: $" + impactOnSavings.ToString();
+        newSavingsAmount = currentSavingsAmount - impactOnSavings;
+        newSavingsText.text = "New savings amount: " + newSavingsAmount.ToString();
+        PlayerPrefs.SetFloat("CurrentSavingsAmount", newSavingsAmount);
 
     }
 	

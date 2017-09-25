@@ -8,7 +8,7 @@ public class PersistentManagerScript : MonoBehaviour {
 	public static PersistentManagerScript Instance { get; private set; }
 
     public List<Button> sceneButtonList = new List<Button>();
-    public static int numberOfSceneButtons = 9;
+    public static int numberOfSceneButtons = 11;
     public static int mostRecentActiveSceneButtonIndex = 4;
     public static int currentlyClickedSceneButtonindex = 0;
     public bool hasFirstSceneBeenLoaded = false;

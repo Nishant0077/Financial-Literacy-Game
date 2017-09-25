@@ -171,6 +171,7 @@
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadEmployerScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadHealthPlanScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadHourlyWageScene.cs" />
+    <Compile Include="Assets\Scripts\InterfaceScripts\LoadIllnessScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadSavingsAmountScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadScamScene.cs" />
     <Compile Include="Assets\Scripts\InterfaceScripts\LoadSchoolScene.cs" />
