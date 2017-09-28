@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class TrackScenes : MonoBehaviour {
 
     public static List<Button> sceneButtonList = new List<Button>();
-    int numberOfSceneButtons = 9;   
+    int numberOfSceneButtons;   
     public int currentActiveSceneButtonIndex = 4;       // the healthcare scene's button is active at the start
-  
 
-	// Use this for initialization
-	void Start () {
-
+    void PopulateTheListWithButtonsInTheScene()
+    {
         // this code will execute ONCE
         if (PersistentManagerScript.Instance.hasFirstSceneBeenLoaded == false)
         {
@@ -24,43 +22,47 @@ public class TrackScenes : MonoBehaviour {
             }
 
             numberOfSceneButtons = sceneButtonList.Count;
-           // PersistentManagerScript.Instance.hasFirstSceneBeenLoaded = true;
+            // PersistentManagerScript.Instance.hasFirstSceneBeenLoaded = true;
         }
-
+    }
+    
+    void SetSomeButtonsInactiveAtTheStart()
+    {
         // all buttons after the healthcare scene must be inactive at the start
         for (int i = PersistentManagerScript.mostRecentActiveSceneButtonIndex;
             i < PersistentManagerScript.numberOfSceneButtons; i++)
         {
             sceneButtonList[i].gameObject.SetActive(false);
         }
-        
-        /*
+    }
 
-        // make all buttons inactive at the start
-        // this code will execute EVERYTIME the scene is visited
-
-        Debug.Log("The number of buttons are :" + sceneButtonList.Count);
-        Debug.Log("make all buttons inactive");
-
-        for (int i = 0; i < sceneButtonList.Count; i++)
+    void DisablePreviousButtons()
+    {
+        // the previous buttons must be disabled so that the player cannot go back without finishing the game
+        if (PersistentManagerScript.hasTheGameBeenCompleted == false)
         {
-            sceneButtonList[i].gameObject.SetActive(false);
-        }           
-
-        // this code will exceute only ONCE
-        
-            Debug.Log("make some buttons active");
-
-            for (int i = 0; i < sceneButtonList.Count - 5; i++)   // the last 4 buttons should be active all the time
-                                                                  // the first scene of game must have its button active as well
+            for (int i = 0; i < PersistentManagerScript.mostRecentActiveSceneButtonIndex; i++)
             {
-                sceneButtonList[i].gameObject.SetActive(true);
-            }   
+                Debug.Log("Button with index " + i + " must be disabled");
+                sceneButtonList[i].GetComponent<Button>().interactable = false;
+            }
+        }
+    }
 
-       
+    // Use this for initialization
+    void Start () {
 
-       // Debug.Log(sceneButtonList.Count);   
-       */
+        PopulateTheListWithButtonsInTheScene();
+        SetSomeButtonsInactiveAtTheStart();
+        DisablePreviousButtons();
+
+        if (PersistentManagerScript.mostRecentActiveSceneButtonIndex == 
+            PersistentManagerScript.numberOfSceneButtons - 1)
+        {
+            PersistentManagerScript.hasTheGameBeenCompleted = true;
+            Debug.Log("GAME OVER");
+        }
+            
 
     }
 	

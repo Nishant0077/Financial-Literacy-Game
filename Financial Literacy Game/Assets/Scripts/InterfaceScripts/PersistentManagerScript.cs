@@ -12,6 +12,7 @@ public class PersistentManagerScript : MonoBehaviour {
     public static int mostRecentActiveSceneButtonIndex = 4;
     public static int currentlyClickedSceneButtonindex = 0;
     public bool hasFirstSceneBeenLoaded = false;
+    public static bool hasTheGameBeenCompleted = false;
 
     private void Awake()
     {
