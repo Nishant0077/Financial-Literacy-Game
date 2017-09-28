@@ -41,6 +41,29 @@ public class InterfaceManager : MonoBehaviour {
         {
             sceneButtonList[i].gameObject.SetActive(true);
         }
+
+        if (PersistentManagerScript.mostRecentActiveSceneButtonIndex ==
+           PersistentManagerScript.numberOfSceneButtons - 1)
+        {
+            PersistentManagerScript.hasTheGameBeenCompleted = true;
+            Debug.Log("GAME OVER");
+        }
+    }
+
+    void DisablePreviousButtons()
+    {
+        // the previous buttons must be disabled so that the player cannot go back without finishing the game
+        if (PersistentManagerScript.hasTheGameBeenCompleted == false)
+        {
+            // every button starting from healthcare scene must be disabled
+            for (int i = 4; i < PersistentManagerScript.mostRecentActiveSceneButtonIndex; i++)
+            {
+                Debug.Log("Button with index " + i + " must be disabled");
+                sceneButtonList[i].GetComponent<Button>().interactable = false;
+            }
+        }
+
+
     }
 
     // Use this for initialization
@@ -49,6 +72,7 @@ public class InterfaceManager : MonoBehaviour {
         PopulateTheListWithButtonsInTheScene();
         SetSomeButtonsInactiveAtTheStart();
         SetButtonsActiveAsThePlayerProgresses();
+        DisablePreviousButtons();
 
     }	
 	
