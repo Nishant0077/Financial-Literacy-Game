@@ -42,6 +42,7 @@ public class InterfaceManager : MonoBehaviour {
             sceneButtonList[i].gameObject.SetActive(true);
         }
 
+        // set the boolean if player has finished every scenario
         if (PersistentManagerScript.mostRecentActiveSceneButtonIndex ==
            PersistentManagerScript.numberOfSceneButtons - 1)
         {

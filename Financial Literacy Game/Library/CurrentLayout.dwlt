@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 0
-  controlID: 1047
+  controlID: 1846
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 495}
   m_MaxSize: {x: 10002, y: 14045}
   vertical: 1
-  controlID: 1048
+  controlID: 1847
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 1049
+  controlID: 1848
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,9 +365,9 @@ MonoBehaviour:
     height: 398
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38060000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: d8fbffff00000000
+    m_ExpandedIDs: 4ad0ffff58ddffff6ce2ffffaee3ffff68e4ffff78ecffffd8fbffff000000001e2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - EmailInterface
+  - Day2_CreditCardPurchase
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -527,19 +527,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/InterfaceScripts
+    - Assets/Scripts/Day2_Scripts/Scenario1_Credit Card Purchase_Scripts
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scripts/InterfaceScripts
+  - Assets/Scripts/Day2_Scripts/Scenario1_Credit Card Purchase_Scripts
   m_LastFoldersGridSize: 71
   m_LastProjectPath: C:\Users\User\Documents\financial-literacy-game\Financial Literacy
     Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 214}
-    m_SelectedIDs: a4280000
-    m_LastClickedID: 10404
+    scrollPos: {x: 0, y: 118}
+    m_SelectedIDs: 58280000
+    m_LastClickedID: 10328
     m_ExpandedIDs: 00000000fe2500003a260000a2260000b42600004027000064270000fa2700002a28000056280000622900007c2a0000da2c0000dc2c0000de2c0000e02c0000e22c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 5cb30000000000003c2c00000a2a0000b4460000a2480000aa480000ec3300007e42000074440000484e000004550000d2570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

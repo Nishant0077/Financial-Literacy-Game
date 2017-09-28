@@ -6,7 +6,6 @@ public class NoPlanButton : MonoBehaviour
 {
 
     HealthCareController hc;
-    TrackScenes ts = new TrackScenes();
     float monthlyDeduction = 0;
     float savingsWithNoPlan;
     // Use this for initialization
