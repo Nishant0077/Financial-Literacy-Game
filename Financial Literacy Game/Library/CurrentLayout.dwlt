@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 545}
+  m_MinSize: {x: 950, y: 395}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 981
-  m_MinSize: {x: 950, y: 545}
+  m_MinSize: {x: 950, y: 395}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 683, y: 495}
-  m_MaxSize: {x: 14004, y: 14045}
+  m_MinSize: {x: 683, y: 345}
+  m_MaxSize: {x: 12008, y: 8045}
   vertical: 0
-  controlID: 1846
+  controlID: 9265
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1349
     height: 931
-  m_MinSize: {x: 406, y: 495}
-  m_MaxSize: {x: 10002, y: 14045}
+  m_MinSize: {x: 406, y: 345}
+  m_MaxSize: {x: 8006, y: 8045}
   vertical: 1
-  controlID: 1847
+  controlID: 9266
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 1848
+  controlID: 9267
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,14 +228,14 @@ MonoBehaviour:
     y: 419
     width: 1349
     height: 512
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,9 +365,9 @@ MonoBehaviour:
     height: 398
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: dc280000
     m_LastClickedID: 0
-    m_ExpandedIDs: 4ad0ffff58ddffff6ce2ffffaee3ffff68e4ffff78ecffffd8fbffff000000001e2c0000
+    m_ExpandedIDs: f08cffffc4a2ffff94f0ffff96f5ffffd8fbffff00000000b836000088690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Day2_CreditCardPurchase
+  - Day1_TestScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -527,20 +527,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Day2_Scripts/Scenario1_Credit Card Purchase_Scripts
+    - Assets/Scenes/Day1_Scenes
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scripts/Day2_Scripts/Scenario1_Credit Card Purchase_Scripts
+  - Assets/Scenes/Day1_Scenes
   m_LastFoldersGridSize: 71
   m_LastProjectPath: C:\Users\User\Documents\financial-literacy-game\Financial Literacy
     Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 118}
-    m_SelectedIDs: 58280000
-    m_LastClickedID: 10328
-    m_ExpandedIDs: 00000000fe2500003a260000a2260000b42600004027000064270000fa2700002a28000056280000622900007c2a0000da2c0000dc2c0000de2c0000e02c0000e22c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: 64280000
+    m_LastClickedID: 10340
+    m_ExpandedIDs: 00000000f42500003026000098260000aa260000362700005a270000f0270000202800004c28000058290000722a0000cc2c0000ce2c0000d02c0000d22c0000d42c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe2500003a260000a2260000b42600004027000064270000fa2700002a28000056280000622900007c2a0000da2c0000dc2c0000de2c0000e02c0000e22c000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000f42500003026000098260000aa260000362700005a270000f0270000202800004c28000058290000722a0000cc2c0000ce2c0000d02c0000d22c0000d42c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,9 +593,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: dc280000
+    m_LastClickedInstanceID: 10460
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 5cb30000000000003c2c00000a2a0000b4460000a2480000aa480000ec3300007e42000074440000484e000004550000d2570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

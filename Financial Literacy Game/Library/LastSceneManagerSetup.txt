@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Day2_Scenes/Day2_CreditCardPurchase.unity
+- path: Assets/Scenes/Day1_Scenes/Day1_TestScene.unity
   isLoaded: 1
   isActive: 1
