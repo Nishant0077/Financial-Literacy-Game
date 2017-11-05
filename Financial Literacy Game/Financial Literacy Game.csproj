@@ -137,6 +137,7 @@
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\NoPlanButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\PremiumPlanButton.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\HealthCareScripts\StandardPlanButton.cs" />
+    <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\GameSaver.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\PlayerAttributeEnums.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\PlayerAttributesSetter.cs" />
     <Compile Include="Assets\Scripts\Day1_Scripts\TestSceneScripts\TestSceneNextButton.cs" />

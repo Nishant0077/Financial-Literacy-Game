@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Choice2ButtonScript : MonoBehaviour {
+public class Choice2ButtonScript : MonoBehaviour
+{
 
     float currentSavingsAmount;
     float newSavingsAmount;
@@ -15,9 +16,9 @@ public class Choice2ButtonScript : MonoBehaviour {
 
     private void Start()
     {
-        currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");  
+        currentSavingsAmount = PlayerPrefs.GetFloat("CurrentSavingsAmount");
         //currentSavingsText.text = "Current project sain: " + currentSavingsAmount;
-       
+
     }
 
     public void OnMouseDown()
