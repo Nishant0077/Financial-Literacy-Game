@@ -66,14 +66,6 @@ public class PlayerAttributesSetter : MonoBehaviour {
         hourlyWageText.text = "Hourly Wage: " + hourlyWage;
         currentSavingsText.text = "Current Savings projected over 6 Months: " + currentSavingsAmount;
 
-        PlayerPrefs.SetInt("CreditScore", creditScore);
-        PlayerPrefs.SetFloat("TaxRate", taxRate);
-        PlayerPrefs.SetInt("HourlyWage", hourlyWage);
-        PlayerPrefs.SetFloat("CurrentSavingsAmount", currentSavingsAmount);
-        PlayerPrefs.SetFloat("SavingsFactor", savingsFactor);
-        PlayerPrefs.SetFloat("WeeklyIncome", weeklyIncome);
-        PlayerPrefs.SetInt("IsEnrolledInSchool", isEnrolledInSchool);
-
         // the following dictionary datastructure is to store all the player attributes as defined above in the dictionary
         // of PersistentManagerScript
         // The key for this dictionary should be an enum
@@ -90,7 +82,8 @@ public class PlayerAttributesSetter : MonoBehaviour {
         playerAttributeDictForScene0[PlayerAttributeEnums.currentSavingsAmount] = currentSavingsAmount;
         playerAttributeDictForScene0[PlayerAttributeEnums.hoursOfEmployment] = hoursOfEmployment;
         playerAttributeDictForScene0[PlayerAttributeEnums.taxRate] = taxRate;
-        playerAttributeDictForScene0[PlayerAttributeEnums.isEnrolledInSchool] = isEnrolledInSchool;        
+        playerAttributeDictForScene0[PlayerAttributeEnums.isEnrolledInSchool] = isEnrolledInSchool;
+        playerAttributeDictForScene0[PlayerAttributeEnums.weeklyIncome] = weeklyIncome;
 
         // we have now stored the above dictionary in the static dictionary with the key
         // as this scenes ID. This scene is just given an arbitrary value of 0

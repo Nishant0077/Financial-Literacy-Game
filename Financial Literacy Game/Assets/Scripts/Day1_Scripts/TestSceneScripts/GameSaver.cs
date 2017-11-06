@@ -26,6 +26,7 @@ public class GameSaver : MonoBehaviour {
         // now we copy everything from old dictionary into the new dictionary
         foreach (object key in PreviousSceneDict.Keys)
         {
+            if (!sceneToSaveDict.ContainsKey(key))
             sceneToSaveDict.Add(key, PreviousSceneDict[key]);
         }
 

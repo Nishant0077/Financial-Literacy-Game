@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DoNothingButtonScript : MonoBehaviour {
 
+    public ScamController sc;
+    static int buttonID = 2;
+
     public void OnMouseDown()
     {
-        ScamController.b.gameObject.SetActive(true);
+        sc.DoStuffWhenAButtonIsClicked(buttonID);
     }
 }
